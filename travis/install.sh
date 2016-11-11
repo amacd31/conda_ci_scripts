@@ -2,9 +2,9 @@ MINICONDA_URL="http://repo.continuum.io/miniconda"
 
 platform=$(uname);
 if [[ $platform == 'Linux' ]]; then
-    MINICONDA_FILE="Miniconda-latest-Linux-x86_64.sh"
+    MINICONDA_FILE="Miniconda3-latest-Linux-x86_64.sh"
 elif [[ $platform == 'Darwin' ]]; then
-    MINICONDA_FILE="Miniconda-latest-MacOSX-x86_64.sh"
+    MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
 fi;
 
 wget "${MINICONDA_URL}/${MINICONDA_FILE}"
