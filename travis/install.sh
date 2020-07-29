@@ -7,7 +7,7 @@ elif [[ $platform == 'Darwin' ]]; then
     MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
 fi;
 
-wget "${MINICONDA_URL}/${MINICONDA_FILE}"
+wget -q "${MINICONDA_URL}/${MINICONDA_FILE}"
 bash $MINICONDA_FILE -b -p $HOME/miniconda
 
 export PATH=$HOME/miniconda/bin:$PATH
